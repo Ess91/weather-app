@@ -1,0 +1,127 @@
+.container {
+    padding: 60px;
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    font-family: "Architects Daughter", cursive;
+  }
+  
+  #search-bar {
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: 1px solid #000cff;
+  }
+  
+  #submit-btn {
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 6px;
+    background-color: #000cff;
+    color: #ffffff;
+    border: 1px solid #000cff;
+  }
+  
+  #current-btn {
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 6px;
+    background-color: #000cff;
+    color: #ffffff;
+    border: 1px solid #000cff;
+  }
+  
+  .search-bar {
+    float: right;
+  }
+  
+  .fas.fa-location-arrow {
+    font-size: 25px;
+    padding-left: 30px;
+    color: #000cff;
+  }
+  
+  /***Main Heading**/
+  
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 20px;
+    text-transform: capitalize;
+  }
+  
+  .card-header {
+    margin-left: 20px;
+    padding: 20px 0 0 5px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #000cff;
+  }
+  
+  h4,
+  .weather {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  
+  .weather-status {
+    font-size: 20px;
+  }
+  
+  .weather-heading {
+    font-size: 50px;
+  }
+  .temp {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  
+  #celsius-link,
+  #fah-link {
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    bottom: 25px;
+    text-decoration: none;
+  }
+  
+  /***Weather Icons *****/
+  
+  .time-status {
+    font-size: larger;
+    font-weight: bold;
+    padding: 40px;
+  }
+  
+  /***5 Day Forecast**/
+  
+  h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .weather-advisory {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  .temperature {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    border: 1px solid #000cff;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 10px 5px 5px #000cff;
+  }
+  
+  .author {
+    text-align: center;
+    padding-top: 10px;
+  }
+  

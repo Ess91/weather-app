@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e065ef4b65.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Page</title>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <form id="search-form">
+          <input type="text" placeholder="Search..." id="search-bar">
+          <input type="submit" value="Search" id="submit-btn">
+          <input type="submit" value="Current Location" id="current-btn">
+        
+        </form>
+      </div>
+
+      <!--Padding to make it spacious 18rem-->
+
+      <div class="card-header" style="width: 28rem;">
+        <div class="card-body">
+          <h1 id="main-city">London</h1>
+          <div class="date-item">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4>Wed 3rd June</h4>
+                <p class="weather">Light Rain Showers</p>
+                <p class="weather-heading">
+                  <img src="images/iconfinder_weather_7_2682844.png" width="110" alt="Sun-Rain">
+                </p>
+               
+              </div>
+
+              <div class="col-sm-6">
+                <br />
+                <p class="weather-status">
+
+                  <strong>Feels Like:</strong><p id="feels">24</p>
+                  <strong>Humidity:</strong><p id="humidity">61%</p> 
+                  <strong>Wind:</strong><p id="wind">8mph</p> 
+                  
+                </p>
+                <span class="temp" id="temp">22</span>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C | </a>
+                  <a href="#" id="fah-link">°F</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="time-weather">
+        <div class="row">
+          <div class="col">
+            <p class="time-status">
+              07:00 <br />
+              <img src="images/iconfinder_weather_13_2682838.png" width="50"alt="Cloud"><br />5°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              10:00 <br />
+              <img src="images/iconfinder_weather_13_2682838.png" width="50"alt="Cloud"></i><br />9°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              13:00 <br />
+              <img src="images/iconfinder_weather_7_2682844.png" width="50" alt="Sun-Rain"><br />15°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              16:00 <br />
+              <img src="images/iconfinder_weather_7_2682844.png" width="50" alt="Sun-Rain"><br />17°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              19:00<br />
+              <img src="images/iconfinder_weather_7_2682844.png" width="50" alt="Sun-Rain"><br />15°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              22:00 <br />
+              <img src="images/iconfinder_weather_13_2682838.png" width="50"alt="Cloud"><br />
+              10°C
+            </p>
+          </div>
+
+          <div class="col">
+            <p class="time-status">
+              01:00 <br />
+              <img src="images/iconfinder_weather_13_2682838.png" width="50"alt="Cloud"><br />8°C
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>FORECAST FOR NEXT 5 DAYS</h3>
+      <!--Cards that will highlight when hovered over-->
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thurs</h5>
+              <p class="weather-advisory">
+                <img src="images/iconfinder_weather_13_2682838.png" width="80"alt="Cloud">
+              </p>
+              <p class="temperature">17°C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <p class="weather-advisory">
+                <img src="images/iconfinder_weather_7_2682844.png" width="80" alt="Sun-Rain">
+              </p>
+              <p class="temperature">18°C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sat</h5>
+              <p class="weather-advisory">
+                <img src="images/iconfinder_weather_13_2682838.png" width="80"alt="Cloud">
+              </p>
+              <p class="temperature">19°C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sun</h5>
+              <p class="weather-advisory">
+                <img src="images/iconfinder_weather_7_2682844.png" width="80" alt="Sun-Rain">
+              </p>
+              <p class="temperature">18°C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mon</h5>
+              <p class="weather-advisory">
+                <img src="images/iconfinder_weather_13_2682838.png" width="80"alt="Cloud">
+              </p>
+              <p class="temperature">20°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     <p class="author">This page was built by Esther Agyare-Boateng </p>
+    </div>
+
+    <script src="src/index.js">
+
+    </script>
+  </body>
+</html>
